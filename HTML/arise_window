@@ -1,0 +1,17 @@
+<TABLE BORDER="1">
+<TR>
+<TH COLSPAN="2">Номер точки: [% "N_point" %]</TH>
+</TR>
+<TR>
+<TH COLSPAN="2">Фото: </TH>
+</TR>
+<TR>
+<TH COLSPAN="2"><IMG src="[% "N_FOTO" %]" WIDTH="400" HEIGHT="250" ALIGN="center"></TH>
+</TR>
+<TR>
+<TD>Дата обследования: [% "DATE" %] </TD><TD>Обследовал: [% "FIO" %] </TD>
+</TR>
+<TR>
+<TD COLSPAN="2">Причина изменений лесного покрова: [% "NOTE" %] </TD>
+</TR>
+</TABLE> 
