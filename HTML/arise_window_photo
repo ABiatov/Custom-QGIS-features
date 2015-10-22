@@ -6,7 +6,7 @@
 <TH COLSPAN="2">Фото: </TH>
 </TR>
 <TR>
-<TH COLSPAN="2"><IMG src="[% "N_FOTO" %]" WIDTH="400" HEIGHT="250" ALIGN="center"></TH>
+<TH COLSPAN="2"><IMG src="/home/narwhale/Maps/geophoto/2015-10-22-PK-Kavalerovo/[% "filename" %]" WIDTH="400" HEIGHT="250" ALIGN="center"></TH>
 </TR>
 <TR>
 <TD>Дата обследования: [% "DATE" %] </TD><TD>Обследовал: [% "FIO" %] </TD>
