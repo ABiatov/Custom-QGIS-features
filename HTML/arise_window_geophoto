@@ -1,0 +1,14 @@
+<TABLE BORDER="1">
+<TR>
+<TH>Номер фото: [% "filename" %]</TH>
+</TR>
+<TR>
+<TH>Фото: </TH>
+</TR>
+<TR>
+<TH ><IMG src="[% "filepath" %]" WIDTH="400" HEIGHT="250" ALIGN="center"></TH>
+</TR>
+<TR>
+<TD>Дата обследования: [% "gps_date" %] </TD>
+</TR>
+</TABLE> 
