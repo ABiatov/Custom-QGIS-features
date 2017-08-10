@@ -7,6 +7,8 @@ email                : anton.biatov@gmail.com
 
  ***************************************************************************/
 
+Your need copy this file to yours local folder "<USER>/.qgis2/python/expressions/"
+
 /***************************************************************************
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
