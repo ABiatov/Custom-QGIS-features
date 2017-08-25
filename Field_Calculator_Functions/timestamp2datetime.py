@@ -33,11 +33,31 @@ def timestamp2datetime(value1, feature, parent):
     return outdatetime
 
 @qgsfunction(args='auto', group='Custom')
-def timestamp2date(value1, feature, parent):
+def timestamp2dateYMD(value1, feature, parent):
     """
-  <h4>Return</h4>Get Data from 'timestamp' field
-  <p><h4>Syntax</h4>timestamp2date("Timestamp")</p><p>Return: Y-m-d</p>
-  <p><h4>Example</h4>timestamp2date("1502380248")</p><p>Return: '2017-08-10'</p>
+  <h4>Return</h4>Get Data from 'timestamp' field as 'Y-m-d'
+  <p><h4>Syntax</h4>timestamp2dateYMD("Timestamp")</p><p>Return: Y-m-d</p>
+  <p><h4>Example</h4>timestamp2dateYMD("1502380248")</p><p>Return: '2017-08-10'</p>
     """
     outdate = datetime.datetime.fromtimestamp(int(value1[0:10])).strftime('%Y-%m-%d')
+    return outdate
+
+@qgsfunction(args='auto', group='Custom')
+def timestamp2dateDMY(value1, feature, parent):
+    """
+  <h4>Return</h4>Get Data from 'timestamp' field as 'd/m/Y'
+  <p><h4>Syntax</h4>timestamp2dateDMY("Timestamp")</p><p>Return: d/m/Y</p>
+  <p><h4>Example</h4>timestamp2dateDMY("1502380248")</p><p>Return: '10/08/2017'</p>
+    """
+    outdate = datetime.datetime.fromtimestamp(int(value1[0:10])).strftime('%d/%m/%Y')
+    return outdate
+
+@qgsfunction(args='auto', group='Custom')
+def timestamp2time(value1, feature, parent):
+    """
+  <h4>Return</h4>Get Time from 'timestamp' field
+  <p><h4>Syntax</h4>timestamp2time("Timestamp")</p><p>Return: H:M:S</p>
+  <p><h4>Example</h4>timestamp2time("1502380248")</p><p>Return: '18:50:48'</p>
+    """
+    outdate = datetime.datetime.fromtimestamp(int(value1[0:10])).strftime('%H:%M:%S')
     return outdate
